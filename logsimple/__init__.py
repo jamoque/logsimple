@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 class logger:
     END = '\033[0m'
 

@@ -1,4 +1,4 @@
-logger
+logger.py
 setup.py
 logsimple.egg-info/PKG-INFO
 logsimple.egg-info/SOURCES.txt
