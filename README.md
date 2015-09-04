@@ -1,6 +1,6 @@
 # logsimple
 
-### A dirt simple package for logging
+### A dirt simple package for Python logging
 
 There are a lot of different packages out there for logging in Python. Many of them are very good. Very few of them are simple.
 
@@ -13,7 +13,7 @@ logsimple is, well, simple. Instead of having tons of lines for set up, you can 
 logsimple is managed under PyPI, which means all you have to do is type
 
 ```
-$ pip install logsimple
+$ sudo pip install logsimple
 ```
 
 in your terminal and the project directory you're working in will now have access to the logsimple package.
@@ -40,9 +40,9 @@ instead type
 logger.log(my_string)
 ```
 
-In the event that you want to add special formatting or color to your logs (if you don't then you don't need this package), all you have to do is pass parameters to logger.log(). You can change the format (bold/underline), color, and highlight of the text.
+In the event that you want to add special formatting or color to your logs (if you don't then you don't need this package), all you have to do is pass parameters to ```logger.log()```. You can change the format (bold/underline), color, and highlight of the text.
 
-So a call to logger.log() with all options would look like:
+So a call to ```logger.log()``` with all options would look like:
 
 ```
 logger.log(my_string, color='r', format='b', highlight='y')
@@ -74,19 +74,31 @@ Here are all the options you have for changing the look of your output:
 
 ### Examples:
 
+```python
+logger.log(my_string, color='r')
 ```
-logger.log(my_string, color='r', format='b', highlight='y')
-```
+![example](https://raw.githubusercontent.com/jamoque/logsimple/master/examples/color_red.png "Red text")
 
 
-```
-logger.log(my_string, color='y', format='u', highlight='b')
-```
-
-```
-logger.log(my_string, format='b', highlight='b')
-```
-
-```
+```python
 logger.log(my_string, format='u')
 ```
+![example](https://raw.githubusercontent.com/jamoque/logsimple/master/examples/underline.png "Underlined text")
+
+
+```python
+logger.log(my_string, format='b', highlight='y')
+```
+![example](https://raw.githubusercontent.com/jamoque/logsimple/master/examples/color_blue-highlight_yellow.png "Blue, highlighted yellow")
+
+
+```python
+logger.log(my_string, format='u', color='c')
+```
+![example](https://raw.githubusercontent.com/jamoque/logsimple/master/examples/underline-color_cyan.png "Underlined cyan text")
+
+
+```python
+logger.log(my_string, format='b', color='y', highlight='p')
+```
+![example](https://raw.githubusercontent.com/jamoque/logsimple/master/examples/bold-color_yellow-highlight_purple.png "Bold, yellow, highlighted purple")
